@@ -1,13 +1,13 @@
 {% set name = "dagster_ssh" %}
-{% set version = "0.6.5" %}
+{% set version = "0.6.7.post0" %}
 
 package:
   name: "{{ name|lower }}"
   version: "{{ version }}"
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: f18ecf5c008f101831840601efc0a9cf493cf8ea3edcc2e44e8f6ecc80e726a7
+  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name|replace('_', '-') }}/{{ name|replace('_', '-') }}-{{ version }}.tar.gz"
+  sha256: 8793e3a9174129a41214fde327b645a79e280f1d351e7968c0b7d77d394ee33a
 
 build:
   number: 0
